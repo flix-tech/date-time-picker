@@ -254,7 +254,6 @@ $theme-color: #3f51b5;
     .owl-dt-calendar-table-divider {
       position: relative;
       height: 1px;
-      padding-bottom: .5em;
 
       &:after {
         content: '';
@@ -669,5 +668,35 @@ $theme-color: #3f51b5;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px;
+
+}
+
+.owl-dt-calendar-weeknumber {
+  font-size: 14px;
+  border-right: 1px solid #e1e1e1;
+  padding-right: .5em;
+  line-height: 16px;
+  color: #8b9898;
+  width: 38px;
+  text-align: center;
+}
+
+.owl-dt-calendar-table .owl-dt-calendar-header .owl-dt-calendar-table-divider {
+  padding-bottom: 0;
+}
+
+.owl-dt-calendar-main {
+  padding-bottom: 0;
+}
+.owl-dt-calendar-table .owl-dt-calendar-header .owl-dt-weekdays th {
+  padding-bottom: 5px;
+}
+
+.owl-dt-inline-container .owl-dt-calendar, .owl-dt-popup-container .owl-dt-calendar {
+  height: auto;
+}
+
+.owl-dt-calendar-weeknumber span {
+  width: 18px;
+  display: inline-block;
 }

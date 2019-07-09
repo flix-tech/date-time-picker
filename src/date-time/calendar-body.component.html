@@ -1,4 +1,9 @@
 <tr *ngFor="let row of rows; let rowIndex = index" role="row">
+    <td class="owl-dt-calendar-weeknumber">
+      <span>
+        {{ row[0].weekNumber }}
+      </span>
+    </td>
     <td *ngFor="let item of row; let colIndex = index"
         class="owl-dt-calendar-cell {{item.cellClass}}"
         [tabindex]="isActiveCell(rowIndex, colIndex) ? 0 : -1"

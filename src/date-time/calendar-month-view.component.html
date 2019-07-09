@@ -2,6 +2,7 @@
        [class.owl-dt-calendar-only-current-month]="hideOtherMonths">
     <thead class="owl-dt-calendar-header">
     <tr class="owl-dt-weekdays">
+        <th class="owl-dt-weeknumber"></th>
         <th *ngFor="let weekday of weekdays"
             [attr.aria-label]="weekday.long"
             class="owl-dt-weekday" scope="col">
@@ -9,7 +10,7 @@
         </th>
     </tr>
     <tr>
-        <th class="owl-dt-calendar-table-divider" aria-hidden="true" colspan="7"></th>
+        <th class="owl-dt-calendar-table-divider" aria-hidden="true" colspan="8"></th>
     </tr>
     </thead>
     <tbody owl-date-time-calendar-body role="grid"

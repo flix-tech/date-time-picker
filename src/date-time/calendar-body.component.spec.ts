@@ -98,5 +98,5 @@ class StandardCalendarBodyComponent {
 }
 
 function createCell( value: number ) {
-    return new CalendarCell(value, `${value}`, `${value}-label`, true);
+    return new CalendarCell(value, `${value}`, `${value}-label`, true, false, '', 0);
 }

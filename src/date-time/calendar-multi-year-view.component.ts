@@ -400,7 +400,7 @@ export class OwlMultiYearViewComponent<T> implements OnInit, AfterContentInit {
         const startDateOfYear = this.dateTimeAdapter.createDate(year, 0, 1);
         const ariaLabel = this.dateTimeAdapter.getYearName(startDateOfYear);
         const cellClass = 'owl-dt-year-' + year;
-        return new CalendarCell(year, year.toString(), ariaLabel, this.isYearEnabled(year), false, cellClass);
+        return new CalendarCell(year, year.toString(), ariaLabel, this.isYearEnabled(year), false, cellClass, 0);
     }
 
     private setSelectedYears(): void {
