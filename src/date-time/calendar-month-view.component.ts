@@ -469,7 +469,7 @@ export class OwlMonthViewComponent<T> implements OnInit, AfterContentInit, OnDes
         var yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
         // Calculate full weeks to nearest Thursday
         var weekNo = Math.ceil(( ( (d.getTime() - yearStart.getTime()) / 86400000) + 1)/7);
-        // Return array of year and week number
+        // Return week number
         return weekNo;
     }
 
